@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#0C0B14">
 <title>Guia · Comercial Logos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -134,7 +134,7 @@ em{font-style:italic;color:var(--pl);font-weight:800}
 .search svg{width:18px;height:18px;color:var(--cp);flex:none}
 .search input{flex:1;background:none;border:0;color:#fff;font:inherit;outline:0;padding:12px 0}
 .chips{display:flex;gap:8px;flex-wrap:wrap}
-.chip{background:var(--e1);border:1px solid var(--bd2);color:var(--tx);border-radius:999px;padding:9px 16px;font-size:14px;font-weight:600;transition:all .25s;min-height:40px}
+.chip{background:var(--e1);border:1px solid var(--bd2);color:var(--tx);border-radius:999px;padding:9px 16px;font-size:14px;font-weight:600;transition:all .25s;min-height:44px}
 .chip:hover{border-color:var(--pl);color:#fff}
 .chip.on{background:var(--p);border-color:var(--p);color:#fff;box-shadow:0 6px 22px rgba(91,63,248,.45)}
 .chip b{opacity:.65;font-weight:700;margin-left:4px}
@@ -153,14 +153,14 @@ em{font-style:italic;color:var(--pl);font-weight:800}
 .lead-card h2{font-size:22px;letter-spacing:-.03em;line-height:1.15}
 .meta{font-size:14px;color:var(--cp)}
 .meta a{color:var(--pl);font-weight:600}.meta a:hover{text-decoration:underline}
-details.msg summary{cursor:pointer;color:var(--tx);font-size:14px;font-weight:600;list-style:none;display:flex;align-items:center;gap:8px;min-height:36px}
+details.msg summary{cursor:pointer;color:var(--tx);font-size:14px;font-weight:600;list-style:none;display:flex;align-items:center;gap:8px;min-height:44px}
 details.msg summary::-webkit-details-marker{display:none}
 details.msg summary::before{content:"+";display:grid;place-items:center;width:22px;height:22px;border-radius:50%;border:1px solid var(--bd2);color:var(--pl);transition:transform .3s var(--ease)}
 details.msg[open] summary::before{transform:rotate(45deg)}
 details.msg pre{white-space:pre-wrap;word-wrap:break-word;font:inherit;font-size:14px;line-height:1.6;background:var(--bg);border:1px solid var(--bd);border-radius:14px;padding:14px;margin-top:8px;color:var(--tx)}
 .acoes{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
 .seg{display:flex;gap:6px;flex-wrap:wrap;padding-top:10px;border-top:1px dashed var(--bd2)}
-.seg button{background:transparent;border:1px solid var(--bd2);color:var(--cp);border-radius:10px;padding:7px 12px;font-size:13px;font-weight:600;transition:all .25s;min-height:36px}
+.seg button{background:transparent;border:1px solid var(--bd2);color:var(--cp);border-radius:10px;padding:7px 12px;font-size:13px;font-weight:600;transition:all .25s;min-height:44px}
 .seg button:hover{color:#fff;border-color:var(--pl)}
 .seg button.on[data-s=enviado]{background:rgba(160,132,250,.18);border-color:var(--pl);color:#fff}
 .seg button.on[data-s=respondeu]{background:rgba(47,191,113,.18);border-color:var(--ok);color:var(--ok)}
@@ -220,7 +220,7 @@ details.msg pre{white-space:pre-wrap;word-wrap:break-word;font:inherit;font-size
 .fluxo .card{padding:24px;min-height:210px}
 .fluxo .card::before{counter-increment:f;content:"0" counter(f);display:block;font-size:44px;font-weight:900;letter-spacing:-.06em;color:var(--pl);margin-bottom:14px}
 .fluxo h3{font-size:22px;letter-spacing:-.03em;margin-bottom:8px;line-height:1.1}
-.fluxo p{font-size:14px}
+.fluxo p{font-size:14px}.metarow input{min-height:44px}
 
 /* faq */
 .faq{display:grid;grid-template-columns:minmax(260px,360px) 1fr;gap:40px;margin-bottom:100px;align-items:start}
@@ -241,7 +241,7 @@ details.msg pre{white-space:pre-wrap;word-wrap:break-word;font:inherit;font-size
 .a>div{overflow:hidden}
 .a p{padding:0 56px 28px 0;font-size:17px;max-width:62ch}
 .a p+p{margin-top:-14px}
-.a b{color:#fff}.a a{color:var(--pl);font-weight:600;border-bottom:1px solid currentColor}
+.a a,.a p{overflow-wrap:anywhere}.a b{color:#fff}.a a{color:var(--pl);font-weight:600;border-bottom:1px solid currentColor}
 .qcat{margin:34px 0 4px;font-size:13px;color:var(--pl);letter-spacing:.05em}
 .qcat:first-child{margin-top:0}
 
@@ -261,16 +261,16 @@ footer .wrap{display:flex;gap:20px;justify-content:space-between;flex-wrap:wrap}
   .wrap{padding:0 18px}
   .nav{top:10px;padding:5px}.nav .links{display:none}.nav .mark{margin:0}
   .nav::after{content:"Comercial Logos";color:#fff;font-weight:800;font-size:14px;padding:0 14px 0 10px}
-  .tabbar{display:flex;position:fixed;left:10px;right:10px;bottom:10px;z-index:60;background:rgba(19,18,31,.9);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:1px solid var(--bd2);border-radius:24px;padding:6px;gap:2px}
-  .tabbar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 2px;border-radius:18px;font-size:11px;font-weight:700;color:var(--cp);transition:all .3s var(--ease)}
+  .tabbar{display:flex;position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:60;background:rgba(19,18,31,.9);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:1px solid var(--bd2);border-radius:24px;padding:6px;gap:2px}
+  .tabbar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 2px;min-height:52px;border-radius:18px;font-size:12px;font-weight:700;color:var(--cp);transition:all .3s var(--ease)}
   .tabbar a svg{width:21px;height:21px}
   .tabbar a.on{background:var(--p);color:#fff}
   .hero{padding-top:110px;min-height:auto}.page-head{padding-top:100px}
   .bento{grid-template-columns:1fr}.t-leads,.t-resp,.t-agora,.t-nunca,.t-meta{grid-column:auto}
   .go{grid-template-columns:1fr}.go a{min-height:170px}
-  .lgrid{grid-template-columns:1fr}.toolbar{top:62px}
+  .lgrid{grid-template-columns:1fr}.toolbar{top:62px;gap:8px;padding:10px;border-radius:16px}.toolbar .chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -10px;padding:0 10px 2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.toolbar .chips::-webkit-scrollbar{display:none}.chip{flex:none}.toolbar .extra{display:none}.toolbar.open .extra{display:flex}.toolbar .row{flex-wrap:nowrap}.toolbar .dayline,.toolbar #daytxt{display:none}
   .step{grid-template-columns:1fr;gap:6px}.dd{grid-template-columns:1fr}.fluxo{grid-template-columns:1fr}
-  .a p{padding-right:0}.fab{bottom:92px;right:14px}.toast{bottom:100px}
+  .a p{padding-right:0}.fab{bottom:calc(92px + env(safe-area-inset-bottom));right:14px}.toast{bottom:100px}
   .marq{transform:none}.marq+.marq{transform:none;margin-top:0}
   .panel .ghost{font-size:130px}
 }
@@ -279,6 +279,9 @@ footer .wrap{display:flex;gap:20px;justify-content:space-between;flex-wrap:wrap}
   .glow{display:none}.js .w>span,.js .reveal{transform:none;opacity:1}
 }
 .lead-card[data-st=enviado] .stamp::after{content:"ENVIADO"}.lead-card[data-st=respondeu] .stamp::after{content:"RESPONDEU"}.lead-card[data-st=nao] .stamp::after{content:"SEM INTERESSE"}
+.fbtn{display:none}@media(max-width:720px){.fbtn{display:inline-flex}}
+@media(max-width:720px){.toolbar .row.extra{flex-wrap:wrap}}
+@media(max-width:720px){.fab .lbl{display:none}.fab .btn{padding:0;width:56px;height:56px;justify-content:center;border-radius:50%}.fab .btn svg{width:22px;height:22px}}
 </style></head>
 <body data-page="guia">
 <div class="progress"></div><div class="corner"></div><div class="glow"></div>
@@ -293,7 +296,7 @@ footer .wrap{display:flex;gap:20px;justify-content:space-between;flex-wrap:wrap}
 <p class="kick reveal" style="margin-bottom:18px">regras de ouro</p>
 <div class="dd"><div class="card ok reveal"><h3>Faça</h3><ul><li>Envie <b>1:1</b>, um por vez, olhando o lead.</li><li><b>Apresente a Logos</b> e convide pro Instagram.</li><li><b>Respeite o não</b> na hora, com educação.</li><li>Chame pelo <b>nome do negócio</b>.</li><li><b>Pare na hora</b> se o WhatsApp avisar de limitação.</li><li>Ajuste o texto quando <b>fizer sentido</b> pro caso.</li></ul></div><div class="card no reveal" style="--d:120ms"><h3>Nunca</h3><ul><li>Prometer <b>prazo</b> ou <b>gratuidade</b>.</li><li>Citar <b>valor</b> por escrito antes da conversa.</li><li>Mandar <b>em massa</b> ou de forma automatizada.</li><li><b>Insistir</b> depois de um não.</li><li>Enviar <b>fora do horário</b> ou no fim de semana.</li><li>Inventar portfólio, PDF ou serviço que a gente não tem.</li></ul></div></div>
 <div class="row" style="margin-bottom:90px"><a class="btn btn-p mag" href="leads.html">Bora pros leads <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="arr"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-g" href="faq.html">Ainda com dúvida? FAQ</a></div></section></main>
-<footer><div class="wrap"><span>Comercial Agência Logos · uso B2B, dado de contato de empresa, opt-out sempre respeitado.</span><span>Lista atualizada em 02/10 às 11:29</span></div></footer>
+<footer><div class="wrap"><span>Comercial Agência Logos · uso B2B, dado de contato de empresa, opt-out sempre respeitado.</span><span>Lista atualizada em 02/10 às 11:37</span></div></footer>
 <div class="toast" role="status" aria-live="polite"></div>
 <script>(function(){
 "use strict";
@@ -545,4 +548,5 @@ if(page==="faq"){
   if(qas[0])qas[0].classList.add("open");
 }
 })();
+(function(){var b=document.getElementById("fbtn"),t=document.querySelector(".toolbar");if(b&&t)b.addEventListener("click",function(){var o=t.classList.toggle("open");b.setAttribute("aria-expanded",o)})})();
 </script></body></html>

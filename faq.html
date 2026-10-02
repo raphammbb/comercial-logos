@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#0C0B14">
 <title>FAQ · Comercial Logos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -134,7 +134,7 @@ em{font-style:italic;color:var(--pl);font-weight:800}
 .search svg{width:18px;height:18px;color:var(--cp);flex:none}
 .search input{flex:1;background:none;border:0;color:#fff;font:inherit;outline:0;padding:12px 0}
 .chips{display:flex;gap:8px;flex-wrap:wrap}
-.chip{background:var(--e1);border:1px solid var(--bd2);color:var(--tx);border-radius:999px;padding:9px 16px;font-size:14px;font-weight:600;transition:all .25s;min-height:40px}
+.chip{background:var(--e1);border:1px solid var(--bd2);color:var(--tx);border-radius:999px;padding:9px 16px;font-size:14px;font-weight:600;transition:all .25s;min-height:44px}
 .chip:hover{border-color:var(--pl);color:#fff}
 .chip.on{background:var(--p);border-color:var(--p);color:#fff;box-shadow:0 6px 22px rgba(91,63,248,.45)}
 .chip b{opacity:.65;font-weight:700;margin-left:4px}
@@ -153,14 +153,14 @@ em{font-style:italic;color:var(--pl);font-weight:800}
 .lead-card h2{font-size:22px;letter-spacing:-.03em;line-height:1.15}
 .meta{font-size:14px;color:var(--cp)}
 .meta a{color:var(--pl);font-weight:600}.meta a:hover{text-decoration:underline}
-details.msg summary{cursor:pointer;color:var(--tx);font-size:14px;font-weight:600;list-style:none;display:flex;align-items:center;gap:8px;min-height:36px}
+details.msg summary{cursor:pointer;color:var(--tx);font-size:14px;font-weight:600;list-style:none;display:flex;align-items:center;gap:8px;min-height:44px}
 details.msg summary::-webkit-details-marker{display:none}
 details.msg summary::before{content:"+";display:grid;place-items:center;width:22px;height:22px;border-radius:50%;border:1px solid var(--bd2);color:var(--pl);transition:transform .3s var(--ease)}
 details.msg[open] summary::before{transform:rotate(45deg)}
 details.msg pre{white-space:pre-wrap;word-wrap:break-word;font:inherit;font-size:14px;line-height:1.6;background:var(--bg);border:1px solid var(--bd);border-radius:14px;padding:14px;margin-top:8px;color:var(--tx)}
 .acoes{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
 .seg{display:flex;gap:6px;flex-wrap:wrap;padding-top:10px;border-top:1px dashed var(--bd2)}
-.seg button{background:transparent;border:1px solid var(--bd2);color:var(--cp);border-radius:10px;padding:7px 12px;font-size:13px;font-weight:600;transition:all .25s;min-height:36px}
+.seg button{background:transparent;border:1px solid var(--bd2);color:var(--cp);border-radius:10px;padding:7px 12px;font-size:13px;font-weight:600;transition:all .25s;min-height:44px}
 .seg button:hover{color:#fff;border-color:var(--pl)}
 .seg button.on[data-s=enviado]{background:rgba(160,132,250,.18);border-color:var(--pl);color:#fff}
 .seg button.on[data-s=respondeu]{background:rgba(47,191,113,.18);border-color:var(--ok);color:var(--ok)}
@@ -220,7 +220,7 @@ details.msg pre{white-space:pre-wrap;word-wrap:break-word;font:inherit;font-size
 .fluxo .card{padding:24px;min-height:210px}
 .fluxo .card::before{counter-increment:f;content:"0" counter(f);display:block;font-size:44px;font-weight:900;letter-spacing:-.06em;color:var(--pl);margin-bottom:14px}
 .fluxo h3{font-size:22px;letter-spacing:-.03em;margin-bottom:8px;line-height:1.1}
-.fluxo p{font-size:14px}
+.fluxo p{font-size:14px}.metarow input{min-height:44px}
 
 /* faq */
 .faq{display:grid;grid-template-columns:minmax(260px,360px) 1fr;gap:40px;margin-bottom:100px;align-items:start}
@@ -241,7 +241,7 @@ details.msg pre{white-space:pre-wrap;word-wrap:break-word;font:inherit;font-size
 .a>div{overflow:hidden}
 .a p{padding:0 56px 28px 0;font-size:17px;max-width:62ch}
 .a p+p{margin-top:-14px}
-.a b{color:#fff}.a a{color:var(--pl);font-weight:600;border-bottom:1px solid currentColor}
+.a a,.a p{overflow-wrap:anywhere}.a b{color:#fff}.a a{color:var(--pl);font-weight:600;border-bottom:1px solid currentColor}
 .qcat{margin:34px 0 4px;font-size:13px;color:var(--pl);letter-spacing:.05em}
 .qcat:first-child{margin-top:0}
 
@@ -261,16 +261,16 @@ footer .wrap{display:flex;gap:20px;justify-content:space-between;flex-wrap:wrap}
   .wrap{padding:0 18px}
   .nav{top:10px;padding:5px}.nav .links{display:none}.nav .mark{margin:0}
   .nav::after{content:"Comercial Logos";color:#fff;font-weight:800;font-size:14px;padding:0 14px 0 10px}
-  .tabbar{display:flex;position:fixed;left:10px;right:10px;bottom:10px;z-index:60;background:rgba(19,18,31,.9);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:1px solid var(--bd2);border-radius:24px;padding:6px;gap:2px}
-  .tabbar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 2px;border-radius:18px;font-size:11px;font-weight:700;color:var(--cp);transition:all .3s var(--ease)}
+  .tabbar{display:flex;position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:60;background:rgba(19,18,31,.9);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:1px solid var(--bd2);border-radius:24px;padding:6px;gap:2px}
+  .tabbar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 2px;min-height:52px;border-radius:18px;font-size:12px;font-weight:700;color:var(--cp);transition:all .3s var(--ease)}
   .tabbar a svg{width:21px;height:21px}
   .tabbar a.on{background:var(--p);color:#fff}
   .hero{padding-top:110px;min-height:auto}.page-head{padding-top:100px}
   .bento{grid-template-columns:1fr}.t-leads,.t-resp,.t-agora,.t-nunca,.t-meta{grid-column:auto}
   .go{grid-template-columns:1fr}.go a{min-height:170px}
-  .lgrid{grid-template-columns:1fr}.toolbar{top:62px}
+  .lgrid{grid-template-columns:1fr}.toolbar{top:62px;gap:8px;padding:10px;border-radius:16px}.toolbar .chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -10px;padding:0 10px 2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.toolbar .chips::-webkit-scrollbar{display:none}.chip{flex:none}.toolbar .extra{display:none}.toolbar.open .extra{display:flex}.toolbar .row{flex-wrap:nowrap}.toolbar .dayline,.toolbar #daytxt{display:none}
   .step{grid-template-columns:1fr;gap:6px}.dd{grid-template-columns:1fr}.fluxo{grid-template-columns:1fr}
-  .a p{padding-right:0}.fab{bottom:92px;right:14px}.toast{bottom:100px}
+  .a p{padding-right:0}.fab{bottom:calc(92px + env(safe-area-inset-bottom));right:14px}.toast{bottom:100px}
   .marq{transform:none}.marq+.marq{transform:none;margin-top:0}
   .panel .ghost{font-size:130px}
 }
@@ -279,6 +279,9 @@ footer .wrap{display:flex;gap:20px;justify-content:space-between;flex-wrap:wrap}
   .glow{display:none}.js .w>span,.js .reveal{transform:none;opacity:1}
 }
 .lead-card[data-st=enviado] .stamp::after{content:"ENVIADO"}.lead-card[data-st=respondeu] .stamp::after{content:"RESPONDEU"}.lead-card[data-st=nao] .stamp::after{content:"SEM INTERESSE"}
+.fbtn{display:none}@media(max-width:720px){.fbtn{display:inline-flex}}
+@media(max-width:720px){.toolbar .row.extra{flex-wrap:wrap}}
+@media(max-width:720px){.fab .lbl{display:none}.fab .btn{padding:0;width:56px;height:56px;justify-content:center;border-radius:50%}.fab .btn svg{width:22px;height:22px}}
 </style></head>
 <body data-page="faq">
 <div class="progress"></div><div class="corner"></div><div class="glow"></div>
@@ -289,7 +292,7 @@ footer .wrap{display:flex;gap:20px;justify-content:space-between;flex-wrap:wrap}
 <label class="search reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="busca" type="search" placeholder="Buscar nas perguntas" autocomplete="off" aria-label="Buscar nas perguntas"></label>
 <p class="sub reveal">Não achou? Chame o Rapha.</p></aside>
 <div><p class="qcat kick">rotina</p><div class="qa" data-busca="quantas mensagens posso mandar por dia? não existe um número mágico. o que protege o nosso número é enviar  1:1 , com intervalo de  1 a 3 minutos , só de  segunda a sexta, das 9h às 18h . use a meta da início como guia seu e ajuste do seu jeito."><button class="q" type="button" aria-expanded="false"><span>Quantas mensagens posso mandar por dia?</span><span class="pm"></span></button><div class="a"><div><p>Não existe um número mágico. O que protege o nosso número é enviar <b>1:1</b>, com intervalo de <b>1 a 3 minutos</b>, só de <b>segunda a sexta, das 9h às 18h</b>. Use a meta da Início como guia seu e ajuste do seu jeito.</p></div></div></div><div class="qa" data-busca="o whatsapp mostrou um aviso de limitação. e agora?  pare na hora.  não tente outro número nem insista. avise o rapha e só volte quando ele disser."><button class="q" type="button" aria-expanded="false"><span>O WhatsApp mostrou um aviso de limitação. E agora?</span><span class="pm"></span></button><div class="a"><div><p><b>Pare na hora.</b> Não tente outro número nem insista. Avise o Rapha e só volte quando ele disser.</p></div></div></div><div class="qa" data-busca="posso mudar o texto antes de enviar? pode, e vale mudar quando fizer sentido pro negócio. só mantenha a regra:  sem prazo, sem gratuidade e sem valor ."><button class="q" type="button" aria-expanded="false"><span>Posso mudar o texto antes de enviar?</span><span class="pm"></span></button><div class="a"><div><p>Pode, e vale mudar quando fizer sentido pro negócio. Só mantenha a regra: <b>sem prazo, sem gratuidade e sem valor</b>.</p></div></div></div><div class="qa" data-busca="quando faço follow-up? se passaram alguns dias sem resposta, mande  um  follow-up. os cards marcados como follow-up já trazem o texto pronto. sem resposta depois disso, pare."><button class="q" type="button" aria-expanded="false"><span>Quando faço follow-up?</span><span class="pm"></span></button><div class="a"><div><p>Se passaram alguns dias sem resposta, mande <b>um</b> follow-up. Os cards marcados como Follow-up já trazem o texto pronto. Sem resposta depois disso, pare.</p></div></div></div><p class="qcat kick">quando o lead responde</p><div class="qa" data-busca="o lead perguntou quanto custa. o que digo? não cite valor por escrito. use a resposta  quanto custa?  na aba respostas: ela leva pra uma conversa curta pra entender o caso, e o valor vem depois."><button class="q" type="button" aria-expanded="false"><span>O lead perguntou quanto custa. O que digo?</span><span class="pm"></span></button><div class="a"><div><p>Não cite valor por escrito. Use a resposta <b>Quanto custa?</b> na aba Respostas: ela leva pra uma conversa curta pra entender o caso, e o valor vem depois.</p></div></div></div><div class="qa" data-busca="o lead pediu pra parar de receber mensagem. use a resposta  pediu pra parar , não chame mais essa pessoa e  avise o rapha  pra marcar como não contatar na base."><button class="q" type="button" aria-expanded="false"><span>O lead pediu pra parar de receber mensagem.</span><span class="pm"></span></button><div class="a"><div><p>Use a resposta <b>Pediu pra parar</b>, não chame mais essa pessoa e <b>avise o Rapha</b> pra marcar como Não contatar na base.</p></div></div></div><div class="qa" data-busca="o lead se interessou. e agora? use  sim / pode falar  ou  me conta mais . faça uma pergunta sobre o cenário dela e proponha uma conversa. quando chegar em proposta ou valor, chame o rapha."><button class="q" type="button" aria-expanded="false"><span>O lead se interessou. E agora?</span><span class="pm"></span></button><div class="a"><div><p>Use <b>Sim / pode falar</b> ou <b>Me conta mais</b>. Faça uma pergunta sobre o cenário dela e proponha uma conversa. Quando chegar em proposta ou valor, chame o Rapha.</p></div></div></div><div class="qa" data-busca="o lead mandou algo que não está nas respostas. responda do seu jeito, com educação, e mande um print pro rapha. se aparecer de novo, a gente cria uma resposta nova pra você."><button class="q" type="button" aria-expanded="false"><span>O lead mandou algo que não está nas respostas.</span><span class="pm"></span></button><div class="a"><div><p>Responda do seu jeito, com educação, e mande um print pro Rapha. Se aparecer de novo, a gente cria uma resposta nova pra você.</p></div></div></div><p class="qcat kick">a logos</p><div class="qa" data-busca="o que a logos oferece? somos uma agência de marketing digital pra negócio local. cuidamos do  instagram  (planejamento de conteúdo, posts e gestão do perfil) e criamos  sites . o nosso portfólio é o instagram:  https://www.instagram.com/aagencia.logos/ ."><button class="q" type="button" aria-expanded="false"><span>O que a Logos oferece?</span><span class="pm"></span></button><div class="a"><div><p>Somos uma agência de marketing digital pra negócio local. Cuidamos do <b>Instagram</b> (planejamento de conteúdo, posts e gestão do perfil) e criamos <b>sites</b>. O nosso portfólio é o Instagram: <a href="https://www.instagram.com/aagencia.logos/" target="_blank" rel="noopener">https://www.instagram.com/aagencia.logos/</a>.</p></div></div></div><div class="qa" data-busca="por que a mensagem diz que o negócio não tem site? toda a lista vem do google maps, de negócios que  não têm site próprio . por isso a mensagem sempre cita isso, e depois cada caso é um caso: às vezes pesa mais o instagram, às vezes o site."><button class="q" type="button" aria-expanded="false"><span>Por que a mensagem diz que o negócio não tem site?</span><span class="pm"></span></button><div class="a"><div><p>Toda a lista vem do Google Maps, de negócios que <b>não têm site próprio</b>. Por isso a mensagem sempre cita isso, e depois cada caso é um caso: às vezes pesa mais o Instagram, às vezes o site.</p></div></div></div><div class="qa" data-busca="posso mandar áudio ou ligar? o padrão da lista é texto. se quiser ligar ou mandar áudio,  combine antes com o rapha ."><button class="q" type="button" aria-expanded="false"><span>Posso mandar áudio ou ligar?</span><span class="pm"></span></button><div class="a"><div><p>O padrão da lista é texto. Se quiser ligar ou mandar áudio, <b>combine antes com o Rapha</b>.</p></div></div></div><div class="qa" data-busca="como o lead chegou na lista? a gente buscou negócios locais no google maps. o telefone que usamos é o que o próprio negócio deixa  público  lá."><button class="q" type="button" aria-expanded="false"><span>Como o lead chegou na lista?</span><span class="pm"></span></button><div class="a"><div><p>A gente buscou negócios locais no Google Maps. O telefone que usamos é o que o próprio negócio deixa <b>público</b> lá.</p></div></div></div><p class="qcat kick">a página</p><div class="qa" data-busca="as minhas marcações (enviei, respondeu) somem? elas ficam  só neste navegador e neste aparelho . se você limpar os dados do navegador ou trocar de aparelho, perde. por isso, no fim do dia, use  copiar resumo do dia  e mande pro rapha."><button class="q" type="button" aria-expanded="false"><span>As minhas marcações (Enviei, Respondeu) somem?</span><span class="pm"></span></button><div class="a"><div><p>Elas ficam <b>só neste navegador e neste aparelho</b>. Se você limpar os dados do navegador ou trocar de aparelho, perde. Por isso, no fim do dia, use <b>Copiar resumo do dia</b> e mande pro Rapha.</p></div></div></div><div class="qa" data-busca="a lista não mudou. está desatualizada? o rodapé de toda página mostra  quando a lista foi atualizada . se parecer velha, recarregue a página e, se continuar, avise o rapha."><button class="q" type="button" aria-expanded="false"><span>A lista não mudou. Está desatualizada?</span><span class="pm"></span></button><div class="a"><div><p>O rodapé de toda página mostra <b>quando a lista foi atualizada</b>. Se parecer velha, recarregue a página e, se continuar, avise o Rapha.</p></div></div></div><div class="qa" data-busca="um card diz que não tem whatsapp válido. esse lead não tem celular utilizável na base. pule e avise o rapha se quiser que ele confira."><button class="q" type="button" aria-expanded="false"><span>Um card diz que não tem WhatsApp válido.</span><span class="pm"></span></button><div class="a"><div><p>Esse lead não tem celular utilizável na base. Pule e avise o Rapha se quiser que ele confira.</p></div></div></div><div class="qa" data-busca="algo quebrou ou ficou estranho na página. chame o rapha dizendo  qual página  e  o que você tocou . print ajuda muito."><button class="q" type="button" aria-expanded="false"><span>Algo quebrou ou ficou estranho na página.</span><span class="pm"></span></button><div class="a"><div><p>Chame o Rapha dizendo <b>qual página</b> e <b>o que você tocou</b>. Print ajuda muito.</p></div></div></div><p class="empty">Nada encontrado. Tente outra palavra.</p></div></div></section></main>
-<footer><div class="wrap"><span>Comercial Agência Logos · uso B2B, dado de contato de empresa, opt-out sempre respeitado.</span><span>Lista atualizada em 02/10 às 11:29</span></div></footer>
+<footer><div class="wrap"><span>Comercial Agência Logos · uso B2B, dado de contato de empresa, opt-out sempre respeitado.</span><span>Lista atualizada em 02/10 às 11:37</span></div></footer>
 <div class="toast" role="status" aria-live="polite"></div>
 <script>(function(){
 "use strict";
@@ -541,4 +544,5 @@ if(page==="faq"){
   if(qas[0])qas[0].classList.add("open");
 }
 })();
+(function(){var b=document.getElementById("fbtn"),t=document.querySelector(".toolbar");if(b&&t)b.addEventListener("click",function(){var o=t.classList.toggle("open");b.setAttribute("aria-expanded",o)})})();
 </script></body></html>
