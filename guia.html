@@ -93,9 +93,7 @@ em{font-style:italic;color:var(--pl);font-weight:800}
 .spot:hover{border-color:var(--bd2)}
 .tilt{transform-style:preserve-3d;transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg))}
 .bento{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin:10px 0 80px}
-.t-meta{grid-column:span 5;grid-row:span 2}
-.t-leads{grid-column:span 4}.t-resp{grid-column:span 3}
-.t-agora{grid-column:span 4}.t-nunca{grid-column:span 3}
+.t-leads,.t-resp,.t-agora{grid-column:span 4}.t-nunca{grid-column:span 12}.t-nunca ul{display:flex;gap:34px;flex-wrap:wrap}
 .tile h3{font-size:15px;letter-spacing:0;font-weight:700;color:var(--cp);margin-bottom:10px;line-height:1.3}
 .num{font-size:clamp(56px,7vw,104px);font-weight:900;color:#fff;letter-spacing:-.06em;line-height:.9}
 .num small{font-size:.35em;color:var(--cp);letter-spacing:0;font-weight:600;margin-left:6px}
@@ -174,8 +172,6 @@ details.msg pre{white-space:pre-wrap;word-wrap:break-word;font:inherit;font-size
 .sem{color:var(--warn);font-size:14px;font-weight:600}
 .empty{display:none;text-align:center;padding:60px 20px;color:var(--cp);grid-column:1/-1}
 .fab{position:fixed;right:22px;bottom:26px;z-index:40}
-.dayline{height:6px;border-radius:99px;background:var(--bd2);overflow:hidden;flex:1;min-width:120px}
-.dayline i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--p),var(--pl));transition:width 1s var(--ease)}
 
 /* respostas */
 .split2{display:grid;grid-template-columns:minmax(280px,380px) 1fr;gap:22px;margin-bottom:90px;align-items:start}
@@ -251,7 +247,7 @@ footer .wrap{display:flex;gap:20px;justify-content:space-between;flex-wrap:wrap}
 .toast.on{opacity:1;transform:translate(-50%,0)}
 
 @media(max-width:980px){
-  .bento{grid-template-columns:repeat(6,1fr)}.t-meta{grid-column:span 6;grid-row:auto}.t-leads,.t-resp,.t-agora,.t-nunca{grid-column:span 3}
+  .bento{grid-template-columns:repeat(6,1fr)}.t-leads,.t-resp{grid-column:span 3}.t-agora{grid-column:span 6}.t-nunca{grid-column:span 6}
   .go{grid-template-columns:repeat(2,1fr)}.go a{min-height:220px}
   .split2,.faq{grid-template-columns:1fr}.list{position:static;max-height:none;flex-direction:row;overflow-x:auto;padding-bottom:6px}.item{min-width:230px}.item:hover{transform:none}
   .faq aside,.panel{position:static}
@@ -266,7 +262,7 @@ footer .wrap{display:flex;gap:20px;justify-content:space-between;flex-wrap:wrap}
   .tabbar a svg{width:21px;height:21px}
   .tabbar a.on{background:var(--p);color:#fff}
   .hero{padding-top:110px;min-height:auto}.page-head{padding-top:100px}
-  .bento{grid-template-columns:1fr}.t-leads,.t-resp,.t-agora,.t-nunca,.t-meta{grid-column:auto}
+  .bento{grid-template-columns:1fr}.t-leads,.t-resp,.t-agora,.t-nunca{grid-column:auto}
   .go{grid-template-columns:1fr}.go a{min-height:170px}
   .lgrid{grid-template-columns:1fr}.toolbar{top:62px;gap:8px;padding:10px;border-radius:16px}.toolbar .chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -10px;padding:0 10px 2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.toolbar .chips::-webkit-scrollbar{display:none}.chip{flex:none}.toolbar .extra{display:none}.toolbar.open .extra{display:flex}.toolbar .row{flex-wrap:nowrap}.toolbar .dayline,.toolbar #daytxt{display:none}
   .step{grid-template-columns:1fr;gap:6px}.dd{grid-template-columns:1fr}.fluxo{grid-template-columns:1fr}
@@ -289,14 +285,14 @@ footer .wrap{display:flex;gap:20px;justify-content:space-between;flex-wrap:wrap}
 <nav class="tabbar" aria-label="Principal"><a href="index.html" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>Início</a><a href="leads.html" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 010 6.8"/><path d="M18.5 14.8c1.7.7 2.8 2.4 3 5.2"/></svg>Leads</a><a href="respostas.html" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M21 12a8 8 0 01-11.8 7L3 20.5l1.6-5.1A8 8 0 1121 12z"/><path d="M8.5 11h7M8.5 14h4"/></svg>Respostas</a><a href="guia.html" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M4 5.5A2.5 2.5 0 016.5 3H20v16H6.5A2.5 2.5 0 004 21.5z"/><path d="M4 21.5V5.5"/><path d="M9 8h7"/></svg>Guia</a><a href="faq.html" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="12" cy="12" r="9.5"/><path d="M9.2 9.3a2.9 2.9 0 115.1 1.9c-.8.9-2.3 1.3-2.3 2.8"/><path d="M12 17.2h.01"/></svg>FAQ</a></nav>
 <main><section class="page-head"><div class="wrap">
 <p class="kick reveal">guia</p>
-<h1 class="mega" data-split>Seu dia em <em>6 passos.</em></h1>
+<h1 class="mega" data-split>Seu dia em <em>5 passos.</em></h1>
 <p class="lead reveal" style="--d:300ms">Não precisa decorar. Volte aqui sempre que bater a dúvida de qual é o próximo passo.</p></div></section>
-<section class="wrap"><div class="steps"><div class="step"><div class="ghostn">01</div><div><h3>Confira o horário</h3><p>Só se envia de segunda a sexta, das 9h às 18h. A Início mostra na hora se agora pode.</p><span class="pt">Fora do horário, deixe pra depois.</span></div></div><div class="step"><div class="ghostn">02</div><div><h3>Escolha o lead</h3><p>Em Leads, os follow-ups aparecem primeiro e depois os negócios com mais avaliações. Use a busca e os filtros pra achar quem você quer.</p><span class="pt">O botão Próximo pendente leva ao próximo da fila.</span></div></div><div class="step"><div class="ghostn">03</div><div><h3>Leia e ajuste a mensagem</h3><p>Toque em Ver a mensagem. Ela já vem com o nome do negócio, o bairro e as avaliações reais. Pode mudar o tom se fizer sentido.</p><span class="pt">Sem prazo, sem gratuidade, sem valor.</span></div></div><div class="step"><div class="ghostn">04</div><div><h3>Envie 1:1 e marque</h3><p>Toque em Chamar no WhatsApp, revise e envie. Volte e marque Enviei. Espere de 1 a 3 minutos antes de chamar o próximo.</p><span class="pt">Nunca em massa, nunca automatizado.</span></div></div><div class="step"><div class="ghostn">05</div><div><h3>Respondeu? Abra as Respostas</h3><p>Ache o tipo de retorno, ajuste o texto e copie. Marque Respondeu no card pra contar nas suas estatísticas.</p><span class="pt">Pediu pra parar? Pare e avise o Rapha.</span></div></div><div class="step"><div class="ghostn">06</div><div><h3>No fim do dia, mande o resumo</h3><p>Na Início ou em Leads, toque em Copiar resumo do dia e cole no WhatsApp do Rapha. Ele mostra enviadas, respostas e quem respondeu.</p><span class="pt">Suas marcações ficam só neste aparelho.</span></div></div></div>
+<section class="wrap"><div class="steps"><div class="step"><div class="ghostn">01</div><div><h3>Confira o horário</h3><p>Só se envia de segunda a sexta, das 9h às 18h. A Início mostra na hora se agora pode.</p><span class="pt">Fora do horário, deixe pra depois.</span></div></div><div class="step"><div class="ghostn">02</div><div><h3>Escolha o lead</h3><p>Em Leads, os follow-ups aparecem primeiro e depois os negócios com mais avaliações. Use a busca e os filtros pra achar quem você quer.</p><span class="pt">O botão Próximo pendente leva ao próximo da fila.</span></div></div><div class="step"><div class="ghostn">03</div><div><h3>Leia e ajuste a mensagem</h3><p>Toque em Ver a mensagem. Ela já vem com o nome do negócio, o bairro e as avaliações reais. Pode mudar o tom se fizer sentido.</p><span class="pt">Sem prazo, sem gratuidade, sem valor.</span></div></div><div class="step"><div class="ghostn">04</div><div><h3>Envie 1:1 e marque</h3><p>Toque em Chamar no WhatsApp, revise e envie. Volte e marque Enviei. Espere de 1 a 3 minutos antes de chamar o próximo.</p><span class="pt">Nunca em massa, nunca automatizado.</span></div></div><div class="step"><div class="ghostn">05</div><div><h3>Respondeu? Abra as Respostas</h3><p>Ache o tipo de retorno, ajuste o texto e copie. Marque Respondeu no card pra contar nas suas estatísticas.</p><span class="pt">Pediu pra parar? Pare e avise o Rapha.</span></div></div></div>
 <p class="kick reveal" style="margin-bottom:18px">a conversa em quatro tempos</p><div class="fluxo"><div class="card spot tilt reveal" style="--d:0ms"><h3>Abrir</h3><p>Diga quem é, de onde fala e por que chamou aquele negócio específico.</p></div><div class="card spot tilt reveal" style="--d:90ms"><h3>Despertar</h3><p>Mostre o que a Logos faz (Instagram e site) e leve a pessoa pro nosso Instagram.</p></div><div class="card spot tilt reveal" style="--d:180ms"><h3>Entender</h3><p>Faça uma pergunta sobre o cenário dela. Ouça mais do que fale.</p></div><div class="card spot tilt reveal" style="--d:270ms"><h3>Convidar</h3><p>Proponha uma conversa curta pra ver se faz sentido. Sem pressão.</p></div></div>
 <p class="kick reveal" style="margin-bottom:18px">regras de ouro</p>
 <div class="dd"><div class="card ok reveal"><h3>Faça</h3><ul><li>Envie <b>1:1</b>, um por vez, olhando o lead.</li><li><b>Apresente a Logos</b> e convide pro Instagram.</li><li><b>Respeite o não</b> na hora, com educação.</li><li>Chame pelo <b>nome do negócio</b>.</li><li><b>Pare na hora</b> se o WhatsApp avisar de limitação.</li><li>Ajuste o texto quando <b>fizer sentido</b> pro caso.</li></ul></div><div class="card no reveal" style="--d:120ms"><h3>Nunca</h3><ul><li>Prometer <b>prazo</b> ou <b>gratuidade</b>.</li><li>Citar <b>valor</b> por escrito antes da conversa.</li><li>Mandar <b>em massa</b> ou de forma automatizada.</li><li><b>Insistir</b> depois de um não.</li><li>Enviar <b>fora do horário</b> ou no fim de semana.</li><li>Inventar portfólio, PDF ou serviço que a gente não tem.</li></ul></div></div>
 <div class="row" style="margin-bottom:90px"><a class="btn btn-p mag" href="leads.html">Bora pros leads <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="arr"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-g" href="faq.html">Ainda com dúvida? FAQ</a></div></section></main>
-<footer><div class="wrap"><span>Comercial Agência Logos · uso B2B, dado de contato de empresa, opt-out sempre respeitado.</span><span>Lista atualizada em 02/10 às 11:37</span></div></footer>
+<footer><div class="wrap"><span>Comercial Agência Logos · uso B2B, dado de contato de empresa, opt-out sempre respeitado.</span><span>Lista atualizada em 02/10 às 11:40</span></div></footer>
 <div class="toast" role="status" aria-live="polite"></div>
 <script>(function(){
 "use strict";
@@ -422,29 +418,9 @@ function tick(){
 }
 tick();setInterval(tick,20000);
 
-/* ---------- resumo do dia ---------- */
-function resumo(){
-  var s=stats(),d=new Date(),dt=("0"+d.getDate()).slice(-2)+"/"+("0"+(d.getMonth()+1)).slice(-2);
-  var t="Resumo comercial "+dt+"\nEnviadas hoje: "+s.hoje+" (meta "+s.meta+")\nEnviadas no total: "+s.env+"\nRespostas: "+s.resp+"\nSem interesse: "+s.nao;
-  if(s.nomes.length)t+="\nResponderam: "+s.nomes.join(", ");
-  return t;
-}
-$$("[data-resumo]").forEach(function(b){b.addEventListener("click",function(){copiar(resumo(),"Resumo copiado. Manda pro Rapha.")})});
-
 /* ================= HOME ================= */
 if(page==="home"){
   var s=stats();
-  var circ=2*Math.PI*88,fg=$(".ring .fg");
-  function ring(){
-    var s=stats(),p=Math.min(s.hoje/(s.meta||1),1);
-    if(fg){fg.style.strokeDasharray=circ;fg.style.strokeDashoffset=circ*(1-p)}
-    var n=$("#rn");if(n)n.textContent=s.hoje;var m=$("#rm");if(m)m.textContent="de "+s.meta+" hoje";
-    var inp=$("#metaIn");if(inp&&document.activeElement!==inp)inp.value=s.meta;
-  }
-  if(fg){fg.style.strokeDasharray=circ;fg.style.strokeDashoffset=circ}
-  setTimeout(ring,400);
-  var inp=$("#metaIn");
-  if(inp)inp.addEventListener("change",function(){var v=parseInt(inp.value,10);if(!v||v<1)v=15;if(v>200)v=200;load().meta=v;save();ring();toast("Meta do dia: "+v)});
   var sr=$("#sResp");if(sr)setNum(sr,s.resp);
   var se=$("#sEnv");if(se)se.textContent=s.env;
   var ls=$("#sLeads");if(ls)setNum(ls,parseInt(ls.getAttribute("data-count"),10)||0);
@@ -473,7 +449,6 @@ if(page==="leads"){
     var ct=$("#contagem");if(ct)ct.textContent=n+(n===1?" lead":" leads");
     var em=$(".empty");if(em)em.style.display=n?"none":"block";
   }
-  function dayBar(){var s=stats(),b=$("#dayfill");if(b)b.style.width=Math.min(100,s.hoje/(s.meta||1)*100)+"%";var t=$("#daytxt");if(t)t.textContent=s.hoje+" de "+s.meta+" hoje"}
   $("#busca").addEventListener("input",function(e){q=e.target.value.toLowerCase().trim();filtra()});
   $$(".chip[data-grupo]").forEach(function(ch){ch.addEventListener("click",function(){$$(".chip[data-grupo]").forEach(function(x){x.classList.remove("on")});ch.classList.add("on");grupo=ch.getAttribute("data-grupo");filtra()})});
   $$(".chip[data-tipo]").forEach(function(ch){ch.addEventListener("click",function(){$$(".chip[data-tipo]").forEach(function(x){x.classList.remove("on")});ch.classList.add("on");tipo=ch.getAttribute("data-tipo");filtra()})});
@@ -483,7 +458,7 @@ if(page==="leads"){
       var id=c.getAttribute("data-id"),s=b.getAttribute("data-s"),l=st0.leads[id]||{};
       if(l.s===s){delete st0.leads[id]}
       else{l.s=s;l.n=c.getAttribute("data-nome");if(!l.e)l.e=Date.now();if(s==="respondeu")l.r=Date.now();st0.leads[id]=l}
-      save();paint(c);dayBar();
+      save();paint(c);
       if(s==="enviado"&&st0.leads[id])toast("Marcado como enviado");
       if(s==="respondeu"&&st0.leads[id])toast("Respondeu! Veja a aba Respostas prontas.");
       if(esconder)setTimeout(filtra,500);
@@ -497,7 +472,7 @@ if(page==="leads"){
     if(!alvo){toast("Não tem mais nenhum pendente nessa lista.");return}
     alvo.scrollIntoView({behavior:reduce?"auto":"smooth",block:"center"});alvo.classList.remove("flash");void alvo.offsetWidth;alvo.classList.add("flash");
   });
-  filtra();dayBar();
+  filtra();
 }
 
 /* ================= RESPOSTAS ================= */
